@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script>
+      document.documentElement.classList.add("window-ready");
+    </script>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body class="contact-page">
+    <div class="hero-header">
+      <div class="wrapper">
+        <header>
+          <nav>
+            <div class="togglebtn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="navlinks">
+              <li><a href="./portfolio.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="container">
+          <div class="hero-text">
+            <h5><span class="input">Want to connect? </span></h5>
+
+            <!-- CONTACT FORM -->
+            <div class="cform-card">
+              <form class="cform" action="https://formspree.io/f/xkgqagkw" method="POST">
+                <h2 class="cform-title">Send a message</h2>
+
+                <!-- hidden fields -->
+                <input type="hidden" name="_subject" value="New portfolio message" />
+                <input type="hidden" name="_replyto" value="mehboobh736@gmail.com" />
+                <input type="hidden" name="_gotcha" style="display:none">
+
+                <!-- mode toggles -->
+                <input type="radio" name="contact_mode" id="modeEmail" class="cform-mode" checked>
+                <input type="radio" name="contact_mode" id="modeText"  class="cform-mode">
+
+                <div class="cform-modes">
+                  <label for="modeEmail" class="cform-tab tab-email">Email</label>
+                  <label for="modeText"  class="cform-tab tab-text">Text me</label>
+                </div>
+
+                <div class="cform-field">
+                  <label for="c-name">Name</label>
+                  <input id="c-name" name="name" type="text" placeholder="Your name" required>
+                </div>
+
+                <div class="cform-row cform-row--email">
+                  <div class="cform-field">
+                    <label for="c-email">Email</label>
+                    <input id="c-email" name="email" type="email" placeholder="you@example.com">
+                  </div>
+                </div>
+
+                <div class="cform-row cform-row--phone">
+                  <div class="cform-field">
+                    <label for="c-phone">Phone</label>
+                    <input
+                      id="c-phone"
+                      name="phone"
+                      type="tel"
+                      placeholder="(720) 656-6415"
+                      pattern="^[0-9()+\-.\s]{7,}$"
+                      inputmode="tel"
+                    >
+                  </div>
+                </div>
+
+                <div class="cform-field">
+                  <label for="c-message">Message</label>
+                  <textarea
+                    id="c-message"
+                    name="message"
+                    rows="6"
+                    placeholder="Let's Connect!"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="cform-actions">
+                  <button type="submit" class="cform-btn cform-btn--primary">
+                    Send message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Load typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+      const togglebtn = document.querySelector(".togglebtn");
+      const nav = document.querySelector(".navlinks");
+
+      togglebtn.addEventListener("click", () => {
+        togglebtn.classList.toggle("click");
+        nav.classList.toggle("open");
+      });
+
+      new Typed(".input", {
+        strings: ["Want to connect?", "Let's chat!"],
+        typeSpeed: 150,
+        backSpeed: 70,
+        loop: true,
+        smartBackspace: true,
+      });
+    </script>
+
+    <script>
+      const logo = document.querySelector(".logo");
+      if (logo) {
+        logo.addEventListener("click", (e) => {
+          const spark = document.createElement("span");
+          spark.textContent = "✨";
+          spark.style.position = "absolute";
+          spark.style.left = e.pageX + "px";
+          spark.style.top = e.pageY + "px";
+          spark.style.animation = "floatUp 1s ease forwards";
+          document.body.appendChild(spark);
+          setTimeout(() => spark.remove(), 1000);
+        });
+      }
+
+      const style = document.createElement("style");
+      style.textContent = `
+        @keyframes floatUp {
+          from { transform: translateY(0); opacity: 1; }
+          to { transform: translateY(-50px); opacity: 0; }
+        }
+      `;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>

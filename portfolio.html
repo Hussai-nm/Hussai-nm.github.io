@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Portfolio</title>
+      <link rel="icon" href="https://i.pinimg.com/736x/c0/24/e5/c024e5e3617c2fae8c182e73e4dae1e8.jpg">
+
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet"
+      />
+
+      <!-- Font Awesome -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      />
+
+        <script>document.documentElement.classList.add('window-ready');</script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+
+    <body>
+      <div class="hero-header">
+        <div class="wrapper">
+          <header>
+            <div class="logo">
+              <div class="logo-circle">M</div>
+              <!-- <div class="logo-text">Mehboob Hussain</div> -->
+            </div>
+            <nav>
+              <div class="togglebtn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <ul class="navlinks">
+                <li><a href="./portfolio.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </header>
+          <div class="container">
+            <div class="hero-pic">
+              <img
+                src="./assets/img/me.jpeg"
+                alt="profile pic"
+              />
+            </div>
+            <div class="hero-text">
+              <h5>Hi I'm <span class="input">Fullstack Developer</span></h5>
+              <h1>Mehboob Hussain</h1>
+              <p>
+                Welcome to my portoflio!
+              </p>
+
+              <div class="btn-group">
+                <a href="#" class="btn active">Download Resume</a>
+                <a href="contact.html" class="btn">Contact</a>
+              </div>
+
+              <div class="social">
+                <a href="https://www.linkedin.com/in/mehboob-hussain-59845a344/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/hussai_nm/?next=%2F"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Load typed.js (put this BEFORE your own script) -->
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+        const togglebtn = document.querySelector(".togglebtn");
+        const nav = document.querySelector(".navlinks");
+
+        togglebtn.addEventListener("click", () => {
+          togglebtn.classList.toggle("click");
+          nav.classList.toggle("open");
+        });
+
+        // Start the typing effect
+        new Typed(".input", {
+          strings: ["Fullstack Developer", "UX Designer", "Web Developer"],
+          typeSpeed: 70, // <-- correct key
+          backSpeed: 55,
+          loop: true,
+          smartBackspace: true,
+        });
+      </script>
+      <script>
+        const logo = document.querySelector('.logo');
+        logo.addEventListener('click', (e) => {
+          const spark = document.createElement('span');
+          spark.textContent = '✨';
+          spark.style.position = 'absolute';
+          spark.style.left = e.pageX + 'px';
+          spark.style.top = e.pageY + 'px';
+          spark.style.animation = 'floatUp 1s ease forwards';
+          document.body.appendChild(spark);
+          setTimeout(() => spark.remove(), 1000);
+        });
+        
+        const style = document.createElement('style');
+        style.textContent = `
+        @keyframes floatUp {
+          from { transform: translateY(0); opacity: 1; }
+          to { transform: translateY(-50px); opacity: 0; }
+        }
+        `;
+        document.head.appendChild(style);
+        </script>
+        
+    </body>
+  </html>
+</html>
