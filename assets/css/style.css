@@ -1506,17 +1506,6 @@ body.projects-page .project-tags li{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ===== Projects polish (override) ===== */
 :root{
   --accent:#5aa8ff;
@@ -1612,12 +1601,6 @@ body.projects-page .project-tags li{
 
 /* Experience spacing tweak so it breathes under the grid */
 body.projects-page .experience{ padding: 56px 0 30px; }
-
-
-
-
-
-
 
 
 /* ===== Experience timeline (polished) ===== */
