@@ -43,79 +43,6 @@
           <h2 class="section-title">Projects</h2>
 
           <div class="projects-grid">
-            <!-- TalkBuddy -->
-            <article class="project-card">
-              <div class="project-media placeholder" aria-hidden="true">
-                <i class="fa-solid fa-comment-dots"></i>
-              </div>
-              <div class="project-body">
-                <div class="topline">
-                  <span class="badge concept">In-progress...</span>
-                  <span class="pill">Accessibility</span>
-                </div>
-                <h3>TalkBuddy</h3>
-                <p class="project-summary">
-                  Assistive communication app concept for non-verbal children:
-                  icon → phrase → speech with a high-contrast, mis-tap-resistant
-                  UI.
-                </p>
-                <ul class="project-tags">
-                  <li>React</li>
-                  <li>UX</li>
-                  <li>ARIA</li>
-                </ul>
-              </div>
-            </article>
-
-            <!-- MoodML -->
-            <article class="project-card">
-              <div class="project-media placeholder" aria-hidden="true">
-                <i class="fa-solid fa-face-smile"></i>
-              </div>
-              <div class="project-body">
-                <div class="topline">
-                  <span class="badge concept">In-progress...</span>
-                  <span class="pill">AI / Data</span>
-                </div>
-                <h3>MoodML</h3>
-                <p class="project-summary">
-                  AI-assisted journaling concept with mood tracking and simple
-                  sentiment insights to visualize emotional trends over time.
-                </p>
-                <ul class="project-tags">
-                  <li>React</li>
-                  <li>Python</li>
-                  <li>OpenAI API</li>
-                  <li>Supabase</li>
-                </ul>
-              </div>
-            </article>
-
-            <!-- AWS Serverless File Upload API -->
-            <article class="project-card">
-              <div class="project-media placeholder" aria-hidden="true">
-                <i class="fa-solid fa-cloud-arrow-up"></i>
-              </div>
-              <div class="project-body">
-                <div class="topline">
-                  <span class="badge concept">In-progress</span>
-                  <span class="pill">Backend</span>
-                </div>
-                <h3>Serverless File Upload API</h3>
-                <p class="project-summary">
-                  Secure upload flow concept with metadata logging and
-                  structured errors using Lambda + API Gateway, S3, and a SQL
-                  store.
-                </p>
-                <ul class="project-tags">
-                  <li>AWS Lambda</li>
-                  <li>API Gateway</li>
-                  <li>S3</li>
-                  <li>PostgreSQL</li>
-                </ul>
-              </div>
-            </article>
-
             <!-- PyShell -->
             <article class="project-card">
               <div class="project-media placeholder" aria-hidden="true">
@@ -123,44 +50,70 @@
               </div>
               <div class="project-body">
                 <div class="topline">
-                  <span class="badge concept">In-progress</span>
                   <span class="pill">CLI</span>
+                  <span class="pill">Systems</span>
                 </div>
+
                 <h3>PyShell</h3>
+
                 <p class="project-summary">
-                  Educational shell concept that emulates core Unix-style
-                  commands over a simple in-memory file system with clean OOP
-                  design.
+                  Python-based terminal emulator implementing a tree-structured
+                  filesystem. Supports core Unix-style commands with persistent
+                  state, error handling, and object-oriented design.
                 </p>
+
                 <ul class="project-tags">
                   <li>Python</li>
                   <li>OOP</li>
+                  <li>Data Structures</li>
+                  <li>CLI</li>
                 </ul>
+
+                <div style="margin-top: 10px">
+                  <a
+                    href="https://github.com/Hussai-nm/pyshell-terminal-emulator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style="color: #5aa8ff; font-weight: 600; font-size: 0.9rem"
+                  >
+                    View on GitHub →
+                  </a>
+                </div>
               </div>
             </article>
 
-            <!-- Embedded Tripwire / Door Actuator -->
+            <!-- mmbedded tripwire / door Actuator -->
             <article class="project-card">
               <div class="project-media placeholder" aria-hidden="true">
                 <i class="fa-solid fa-lock"></i>
               </div>
               <div class="project-body">
                 <div class="topline">
-                  <span class="badge concept">In-progress</span>
-                  <span class="pill">Embedded</span>
+                  <span class="pill">Embedded Systems</span>
+                  <span class="pill">Academic Project</span>
                 </div>
+
                 <h3>Embedded Tripwire & Door Actuator</h3>
+
                 <p class="project-summary">
-                  Arduino security concept: motion tripwire controlling a door
-                  servo with JSON serial messages for thresholds, status, and
-                  errors.
+                  Arduino-based security system implementing a motion tripwire
+                  and servo-controlled door actuator. Communicates via
+                  structured JSON messages over serial for configuration,
+                  thresholds, status updates, and error reporting.
                 </p>
+
                 <ul class="project-tags">
                   <li>Arduino</li>
                   <li>C/C++</li>
-                  <li>Serial</li>
+                  <li>Serial Communication</li>
                   <li>JSON</li>
+                  <li>Embedded Systems</li>
                 </ul>
+                <div
+                  style="margin-top: 10px; font-size: 0.85rem; color: #bdbdbd"
+                >
+                  Code developed as part of university coursework.
+                </div>
               </div>
             </article>
           </div>
@@ -169,83 +122,107 @@
         <!-- EXPERIENCE  -->
         <section class="experience" id="experience">
           <h2>Experience</h2>
-
+        
+          <!-- ✅ EVERYTHING inside exp-list -->
           <div class="exp-list">
+        
+            <!-- Freelance -->
+            <article class="exp-item">
+              <header class="exp-head">
+                <h3>Freelance Frontend Developer — Lady Fatima Center</h3>
+                <span class="exp-date">November 2025 – Present</span>
+              </header>
+        
+              <ul class="exp-points">
+                <li>
+                  Owned frontend development and quality assurance for a production React website,
+                  improving cross-device reliability through 20+ UI/UX and compatibility tests.
+                </li>
+                <li>
+                  Integrated and validated external APIs to display prayer times, events,
+                  and calendar data with improved state and error handling.
+                </li>
+                <li>
+                  Debugged and optimized cross-browser behavior via systematic testing,
+                  reducing inconsistencies and improving overall site stability.
+                </li>
+              </ul>
+              
+        
+              <ul class="exp-tags">
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>APIs</li>
+                <li>QA Testing</li>
+                <li>Responsive Design</li>
+              </ul>
+        
+              <div class="exp-links">
+                <a
+                  href="https://github.com/Hussai-nm/ladyfatima-react"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="exp-link"
+                >
+                  GitHub Repository →
+                </a>
+                <span class="exp-note">Client deployment in progress</span>
+              </div>
+            </article>
+        
             <!-- MedGeo -->
             <article class="exp-item">
               <header class="exp-head">
-                <h3>
-                  Software Engineering Intern <span>— MedGeo Ventures</span>
-                </h3>
-                <span class="exp-date">June 2024 – August 2024</span>
+                <h3>Software Developer Intern — MedGeo Ventures</h3>
+                <span class="exp-date">Summer 2025</span>
               </header>
+        
               <ul class="exp-points">
                 <li>
-                  Collaborated on embedded security and door actuator modules
-                  using JSON protocols.
+                  Collaborated with engineers, product managers, and designers to implement
+                  and ship user-facing web features.
                 </li>
                 <li>
-                  Improved microcontroller communication via serial data
-                  handling and error reporting.
+                  Improved platform reliability through targeted testing, bug resolution,
+                  and data validation across frontend systems.
                 </li>
                 <li>
-                  Documented processes; implemented C++ module tests for
-                  servo/sensor reliability.
+                  Built and optimized frontend features using React and REST APIs,
+                  contributing to improved performance and user interaction flow.
                 </li>
-              </ul>
-              <ul class="exp-tags">
-                <li>C/C++</li>
-                <li>Arduino</li>
-                <li>Serial</li>
-                <li>JSON</li>
-              </ul>
+              </ul>              
             </article>
-
+        
             <!-- Teaching Assistant -->
             <article class="exp-item">
               <header class="exp-head">
-                <h3>Teaching Assistant</h3>
+                <h3>Teaching Assistant — Computer Science</h3>
                 <span class="exp-date">Spring 2024</span>
               </header>
+        
               <ul class="exp-points">
-                <li>
-                  Supported Java/Python coursework; clarified OOP, data
-                  structures, and algorithm design.
-                </li>
-                <li>
-                  Led 1:1 sessions focused on debugging strategies and
-                  problem-solving.
-                </li>
-              </ul>
-              <ul class="exp-tags">
-                <li>Java</li>
-                <li>Python</li>
-                <li>OOP</li>
+                <li>Supported students with Java and Python coursework.</li>
+                <li>Led one-on-one debugging and problem-solving sessions.</li>
+                <li>Improved student performance through structured guidance.</li>
               </ul>
             </article>
-
+        
             <!-- Tutor -->
             <article class="exp-item">
               <header class="exp-head">
                 <h3>Tutor</h3>
                 <span class="exp-date">2023 – 2024</span>
               </header>
+        
               <ul class="exp-points">
-                <li>
-                  Guided students in DS&A with emphasis on fundamentals and
-                  interview prep.
-                </li>
-                <li>
-                  Improved student confidence through structured practice plans.
-                </li>
-              </ul>
-              <ul class="exp-tags">
-                <li>DS&A</li>
-                <li>Interview Prep</li>
+                <li>Tutored students in data structures and algorithms.</li>
+                <li>Prepared students for technical interviews.</li>
+                <li>Built individualized study plans.</li>
               </ul>
             </article>
+        
           </div>
-        </section>
+        </section>        
       </div>
     </div>
 

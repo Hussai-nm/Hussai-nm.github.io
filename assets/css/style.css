@@ -1676,3 +1676,24 @@ body.projects-page .exp-tags li{
   body.projects-page .exp-item{ padding-left:52px; }
   body.projects-page .exp-item:before{ left:6px; }
 }
+
+
+.exp-links {
+  margin-top: 10px;
+}
+
+.exp-link {
+  color: #5aa8ff;
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.exp-link:hover {
+  text-decoration: underline;
+}
+
+.exp-note {
+  font-size: 0.85rem;
+  color: #bdbdbd;
+}
