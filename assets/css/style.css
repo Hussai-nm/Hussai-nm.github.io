@@ -105,7 +105,7 @@ nav .navlinks a.active {
   font-weight: 600;
 }
 
-/* ===== Home layout ===== */
+/*  Home layout */
 .container {
   display: flex;
   align-items: center;
@@ -283,9 +283,9 @@ nav .navlinks a.active {
   }
 }
 
-/* =========================================================
-   ABOUT PAGE: Scrollytelling (background scrolls, overlay floats)
-   ========================================================= */
+/*
+   ABOUT PAGE: Scrollytelling 
+ */
 
 .story {
   position: relative;
@@ -488,9 +488,9 @@ body.dir-up .overlay-block.enter-down {
   }
 }
 
-/* =========================================================
+/*
    Legacy helpers you still referenced
-   ========================================================= */
+   */
 .sections {
   position: relative;
   z-index: 1;
@@ -591,7 +591,7 @@ body.dir-up .overlay-block.enter-down {
     ),
     linear-gradient(to top, rgba(0, 0, 0, 0.55) 0, rgba(0, 0, 0, 0) 200px);
 }
-/* ===== SKILLS SECTION ===== */
+/*  SKILLS SECTION */
 .bg-panel[data-key="skills"] {
   position: relative;
   color: #f5f5f5;
@@ -653,7 +653,7 @@ body.dir-up .overlay-block.enter-down {
   color: #4da3ff;
 }
 
-/* ===== Floating tech words (scoped to SKILLS only) ===== */
+/*  Floating tech words (scoped to SKILLS only) */
 .bg-panel[data-key="skills"] {
   position: relative;
 }
@@ -717,7 +717,7 @@ body.dir-up .overlay-block.enter-down {
   }
 }
 
-/* ===== Journey Story Scroller (scoped) ===== */
+/* Journey Story Scroller (scoped)*/
 .journey-story {
   position: relative;
   height: 100vh;
@@ -795,7 +795,7 @@ body.dir-up .overlay-block.enter-down {
     transition: none;
   }
 }
-/* ===== Journey inner scroller ===== */
+/*  Journey inner scroller */
 .journey-story {
   position: relative;
   height: 100vh; /* full screen section */
@@ -838,7 +838,7 @@ body.dir-up .overlay-block.enter-down {
   line-height: 0.9;
 }
 
-/* INNER SCROLLER that won't trap you (see JS handoff below) */
+/* INNER SCROLLER that won't trap you  */
 .journey-story .jsy-viewport {
   position: relative;
   z-index: 1;
@@ -878,7 +878,7 @@ body.dir-up .overlay-block.enter-down {
   }
 }
 
-/* ===== Fix text position under 'Education' ===== */
+/* Fix text position under 'Education' */
 .bg-panel[data-key="journey"] {
   position: relative;
 }
@@ -926,7 +926,7 @@ body.dir-up .overlay-block.enter-down {
   animation: journey-drift-inline 9s ease-in-out infinite alternate;
 }
 
-/* crossfade layers (two spans stacked) */
+/* crossfade layers  */
 .bg-panel[data-key="journey"] .panel-content p .line {
   position: absolute;
   inset: 0;
@@ -946,7 +946,7 @@ body.dir-up .overlay-block.enter-down {
   filter: blur(0);
 }
 
-/* gentle micro drift, does NOT re-center */
+/* gentle micro drift, does not re-center */
 @keyframes journey-drift-inline {
   0% {
     transform: translate3d(0, 0, 0);
@@ -970,7 +970,7 @@ body.dir-up .overlay-block.enter-down {
   }
 }
 
-/* ===== One-section background swap (DU <-> Najaf) ===== */
+/* One-section background swap*/
 
 /* base + injected bg layer */
 .bg-panel[data-key="journey"] .bg-photo {
@@ -998,7 +998,7 @@ body.dir-up .overlay-block.enter-down {
   opacity: 0.18;
 }
 
-/* ===== TRAVEL caption (no swapping; gently floats together) ===== */
+/* TRAVEL caption (no swapping; gently floats together)*/
 .bg-panel[data-key="journey"] .travel-caption {
   position: absolute;
   left: 8vw;
